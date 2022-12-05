@@ -25,8 +25,8 @@ jobs:
         with:
           repo-token: ${{ secrets.TOKEN }}
           command: sync
-          source: ${{ secrets.S3_BUCKET }}
-          destination: ./data/
+          source: ${{ secrets.AWS_S3_BUCKET }}
+          destination: ./vibration_data/
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: ${{ secrets.AWS_REGION }}
